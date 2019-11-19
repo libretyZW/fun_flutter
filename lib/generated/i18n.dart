@@ -21,10 +21,42 @@ class S implements WidgetsLocalizations {
   @override
   TextDirection get textDirection => TextDirection.ltr;
 
+  String get loadFailed => "Load failed,retry later";
+  String get viewStateButtonLogin => "Sign In";
+  String get viewStateButtonRefresh => "Refresh";
+  String get viewStateButtonRetry => "Retry";
+  String get viewStateMessageEmpty => "Nothing Found";
+  String get viewStateMessageError => "Load Failed";
+  String get viewStateMessageNetworkError => "Load Failed,Check network ";
+  String get viewStateMessageUnAuth => "Not sign in yet";
 }
 
 class $en extends S {
   const $en();
+}
+
+class $zh_CN extends S {
+  const $zh_CN();
+
+  @override
+  TextDirection get textDirection => TextDirection.ltr;
+
+  @override
+  String get viewStateButtonRefresh => "刷新一下";
+  @override
+  String get viewStateMessageError => "加载失败";
+  @override
+  String get viewStateMessageNetworkError => "网络连接异常,请检查网络或稍后重试";
+  @override
+  String get loadFailed => "加载失败,请稍后重试";
+  @override
+  String get viewStateButtonRetry => "重试";
+  @override
+  String get viewStateButtonLogin => "登录";
+  @override
+  String get viewStateMessageEmpty => "空空如也";
+  @override
+  String get viewStateMessageUnAuth => "未登录";
 }
 
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
@@ -33,6 +65,7 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
   List<Locale> get supportedLocales {
     return const <Locale>[
       Locale("en", ""),
+      Locale("zh", "CN"),
     ];
   }
 
@@ -59,6 +92,9 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
       switch (lang) {
         case "en":
           S.current = const $en();
+          return SynchronousFuture<S>(S.current);
+        case "zh_CN":
+          S.current = const $zh_CN();
           return SynchronousFuture<S>(S.current);
         default:
           // NO-OP.

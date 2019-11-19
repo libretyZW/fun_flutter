@@ -17,3 +17,9 @@ samples, guidance on mobile development, and a full API reference.
 
 # 2019.11.15
 1. 创建项目基础工程，上传代码。
+
+# 2019.11.19
+1. 搭建网络请求框架；
+2. 初步完成首页的Model层构建；（ Model层：由实体类 + 网络请求仓库 + 网络请求框架 构成 ）
+3. 初步完成基础ViewModel层构建；（基础ViewModel层：Mixin了ChangeNotify，实现了数据更新通知；添加了View的状态，方便界面展示；添加了刷新和加载功能，赋予其通用的列表功能。）
+4. 需要结合Provider实现ViewModel的数据共享和获取唯一性质；
