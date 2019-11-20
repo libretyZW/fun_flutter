@@ -21,7 +21,13 @@ class S implements WidgetsLocalizations {
   @override
   TextDirection get textDirection => TextDirection.ltr;
 
+  String get appName => "Fun Flutter";
+  String get article_tag_top => "Top";
   String get loadFailed => "Load failed,retry later";
+  String get tabHome => "Home";
+  String get tabProject => "Project";
+  String get tabStructure => "Structure";
+  String get tabUser => "Me";
   String get viewStateButtonLogin => "Sign In";
   String get viewStateButtonRefresh => "Refresh";
   String get viewStateButtonRetry => "Retry";
@@ -29,6 +35,7 @@ class S implements WidgetsLocalizations {
   String get viewStateMessageError => "Load Failed";
   String get viewStateMessageNetworkError => "Load Failed,Check network ";
   String get viewStateMessageUnAuth => "Not sign in yet";
+  String get wechatAccount => "Wechat";
 }
 
 class $en extends S {
@@ -44,19 +51,33 @@ class $zh_CN extends S {
   @override
   String get viewStateButtonRefresh => "刷新一下";
   @override
-  String get viewStateMessageError => "加载失败";
+  String get wechatAccount => "公众号";
   @override
-  String get viewStateMessageNetworkError => "网络连接异常,请检查网络或稍后重试";
+  String get appName => "玩Flutter";
+  @override
+  String get tabUser => "我的";
   @override
   String get loadFailed => "加载失败,请稍后重试";
   @override
   String get viewStateButtonRetry => "重试";
   @override
-  String get viewStateButtonLogin => "登录";
+  String get tabStructure => "体系";
   @override
   String get viewStateMessageEmpty => "空空如也";
   @override
   String get viewStateMessageUnAuth => "未登录";
+  @override
+  String get viewStateMessageError => "加载失败";
+  @override
+  String get viewStateMessageNetworkError => "网络连接异常,请检查网络或稍后重试";
+  @override
+  String get tabHome => "首页";
+  @override
+  String get tabProject => "项目";
+  @override
+  String get article_tag_top => "置顶";
+  @override
+  String get viewStateButtonLogin => "登录";
 }
 
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {

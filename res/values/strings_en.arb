@@ -1,4 +1,5 @@
 {
+  "appName": "Fun Flutter",
   "loadFailed": "Load failed,retry later",
   "viewStateMessageError": "Load Failed",
   "viewStateMessageNetworkError": "Load Failed,Check network ",
@@ -6,5 +7,11 @@
   "viewStateMessageUnAuth": "Not sign in yet",
   "viewStateButtonRefresh": "Refresh",
   "viewStateButtonRetry": "Retry",
-  "viewStateButtonLogin": "Sign In"
+  "viewStateButtonLogin": "Sign In",
+  "article_tag_top": "Top",
+  "tabHome": "Home",
+  "tabProject": "Project",
+  "tabStructure": "Structure",
+  "tabUser": "Me",
+  "wechatAccount": "Wechat"
 }

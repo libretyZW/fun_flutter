@@ -14,8 +14,8 @@ abstract class ViewStateListModel<T> extends ViewStateModel {
     try {
       List<T> data = await loadData();
       if (data.isEmpty) {
-        setEmpty();
         list.clear();
+        setEmpty();
       } else {
         onCompleted(data);
         list.clear();
