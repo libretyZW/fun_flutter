@@ -28,3 +28,7 @@ samples, guidance on mobile development, and a full API reference.
 1. 完成Provider层构建，完整实现ViewModel层；
 2. 初步完成首页View层实现，完成首页Banner及列表数据加载；
 3. 剩余点击回到顶部按钮功能异常问题；
+
+# 2019.11.21
+1. 解决点击回到顶部按钮功能异常问题：onPressed后面接的方法，如果方法体只有一行时，可以省略“(){}”，同时，方法体不能使用“()”，否则Widget重绘时，会直接调用该方法！！！
+2. 优化首页使用ViewModel，改成使用一个ViewModel；

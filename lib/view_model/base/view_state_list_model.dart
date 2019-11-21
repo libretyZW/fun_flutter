@@ -1,5 +1,6 @@
-import 'package:fun_flutter/view_model/base/view_state_model.dart';
+import 'view_state_model.dart';
 
+/// 基于
 abstract class ViewStateListModel<T> extends ViewStateModel {
   /// 页面数据
   List<T> list = [];
@@ -10,6 +11,7 @@ abstract class ViewStateListModel<T> extends ViewStateModel {
     await refresh(init: true);
   }
 
+  // 下拉刷新
   refresh({bool init = false}) async {
     try {
       List<T> data = await loadData();

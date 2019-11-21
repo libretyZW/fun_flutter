@@ -3,12 +3,11 @@ import 'package:fun_flutter/model/article.dart';
 import 'package:fun_flutter/model/banner.dart';
 
 class WanAndroidRepository {
-
   // 轮播
   static Future fetchBanners() async {
     var response = await http.get('banner/json');
     return response.data
-        .map<Banner>((item) => Banner.fromJsonMap(item))
+        .map<BannerBean>((item) => BannerBean.fromJsonMap(item))
         .toList();
   }
 
